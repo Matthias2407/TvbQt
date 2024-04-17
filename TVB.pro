@@ -9,14 +9,22 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    characters/stat.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    widgets/statdisplay.cpp \
+    widgets/statlistdisplay.cpp
 
 HEADERS += \
-    mainwindow.h
+    characters/stat.h \
+    mainwindow.h \
+    widgets/statdisplay.h \
+    widgets/statlistdisplay.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    widgets/statdisplay.ui \
+    widgets/statlistdisplay.ui
 
 TRANSLATIONS += \
     TVB_en_150.ts
